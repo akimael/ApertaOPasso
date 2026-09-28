@@ -31,7 +31,7 @@ programa
         escreva("Nota entrevista...: ", nota, "\n")
         escreva("Sala..............: ", sala, "\n")
 
-        se (fezCursoSenai)
+        se fezCursoSenai
         {
             escreva("Curso no SENAI....: Sim\n")
         }
