@@ -1,19 +1,22 @@
 programa{
     funcao inicio(){
-    inteiro numTab, contador, termo
+    inteiro preco, pago, troco
 
-    numTab = 0
-    termo = 0
-    contador = 1
+    preco = 0
+    pago = 0
+    troco = 0
 
-    escreva("olá jovem! Vamos tabular?\n")
-    escreva("Qual tabuada deseja ver?")
-    leia(numTab)
+    escreva("Valor do lanche?\n")
+    leia(preco)
+    escreva("Valor pago?\n")
+    leia(pago) 
 
-    enquanto(contador <= 10){
-    termo = termo + numTab
-    contador = contador + 1
-    escreva("R: ", termo)
+
+    enquanto(troco <= 0){
+    preco = preco
+    troco = preco - pago
+    escreva("troco: ", troco)
     }
+    
 }
 }
